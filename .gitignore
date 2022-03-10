@@ -1,0 +1,8 @@
+*.o
+*.out
+*.exe
+*.blob
+/.cache
+/.ccls-cache
+main
+/main.dSYM
