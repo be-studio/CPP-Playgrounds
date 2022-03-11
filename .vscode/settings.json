@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.o": true,
+    "**/*.out": true,
+    "**/*.exe": true,
+    "html/": true,
+    "latex/": true,
+    ".vscode/": true,
+    "main": true,
+    "main.dSYM/": true
+  }
+}

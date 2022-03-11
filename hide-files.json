@@ -1,0 +1,19 @@
+{
+  "profiles": [
+    {
+      "name": "Default",
+      "detail": "",
+      "description": "Test",
+      "hidden": [
+        "**/*.o",
+        "**/*.out",
+        "**/*.exe",
+        "html/",
+        "latex/",
+        ".vscode/",
+        "main",
+        "main.dSYM/"
+      ]
+    }
+  ]
+}
