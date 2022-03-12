@@ -13,7 +13,7 @@
 #include <dirent.h>
 #include <sys/stat.h>
 
-#define ROOT "[Root]"
+#define ROOT const_cast<char *>("[Root]")
 
 char **files;
 char *active_dir;
@@ -32,7 +32,7 @@ void clear_screen(void);
  */
 int main(void) {
   char *filename;
-  active_dir = (char *)".";
+  active_dir = const_cast<char *>(".");
   char command[500] = "";
   int input_mode = 1;
 
@@ -43,7 +43,7 @@ int main(void) {
     show_file_list(file_count);
     filename = *(files + get_file_choice(file_count));
     if(strcmp(filename, ROOT) == 0) {
-      active_dir = (char *)".";
+      active_dir = const_cast<char *>(".");
     } else if(is_directory(filename)) {
       *(filename + strlen(filename) - 1) = '\0';
       active_dir = filename;
